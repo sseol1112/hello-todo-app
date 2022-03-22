@@ -1,0 +1,139 @@
+button {
+  border: 0;
+  background: 0;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.inner{
+  width: 100%;
+  max-width: 1920px;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#login-form{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+}
+#login-form input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height:45px;
+  border:0;
+  background: none;
+  color:#fff;
+}
+
+#login-form input:first-child{
+  font-size:28px;
+  width:280px;
+  border-bottom:3px solid #fff;
+}
+
+#login-form input:first-child::placeholder{
+  color:#fff;
+}
+
+#login-form input:first-child:focus{
+  outline: 0;
+}
+
+#login-form input:last-child{
+  width:180px;
+  margin:20px auto;
+  font-size:20px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  color:#000;
+}
+
+#login-form input:last-child:hover{
+  background: #ccc;
+}
+
+#clock {
+  position: absolute;
+  top:20%;
+  left:50%;
+  transform: translateX(-50%);
+  font-size:100px;
+  color:#fff;
+  z-index: 10; 
+}
+#greeting {
+  position: absolute;
+  top:33%;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color:#fff;
+  font-size:28px;
+}
+#todo-form {
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translateX(-50%);
+  margin:20px 0;
+  color:#fff;
+  
+}
+#todo-form input {
+  border-radius: 8px;
+  border:0;
+  padding:10px 15px; 
+  font-size: 16px;
+
+}
+#todo-list {
+  position: absolute;
+  top:45%;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 20px 15px 0;
+  color:#fff;
+}
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding:3px 0;
+}
+#todo-list li button{
+  margin-left:30px;
+  padding:0 10px;
+  background: #f5f5f5;
+}
+#todo-list li button:hover {
+  background: #000;
+}
+#weather {
+  position: absolute;
+  top:10px;
+  right:10%;
+  color:#fff;
+}
+#quote {
+  position: absolute;
+  bottom:10px;
+  left:50%;
+  color:#fff;
+  transform: translateX(-50%);
+  font-size:16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#quote span {
+  margin-bottom:10px;
+}
+
+
