@@ -4,7 +4,7 @@ const API_KEY = '13bf317c9e1d29478a080a4873e38f2e';
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  console.log("You live in",lat,lon)
+  //console.log("You live in",lat,lon)
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
 
   fetch(url)
@@ -13,7 +13,7 @@ function onGeoOk(position) {
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
       weather.innerText = data.name;
-      city.innerText = `@ ${data.weather[0].main}`;
+      city.innerText = `/ ${data.weather[0].main}`;
     });
     
 }

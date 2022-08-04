@@ -4,6 +4,6 @@ const bgImage = document.createElement('img');
 const bgImageEl = document.querySelector('.img-wrap');
 
 bgImage.src = `img/${chosenImage}`;
-console.log(bgImage);
+//console.log(bgImage);
 
 bgImageEl.appendChild(bgImage)

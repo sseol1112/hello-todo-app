@@ -18,7 +18,7 @@ function onLoginSubmit (event) {
 
 function handleLinkClick (event) {
   event.preventDefault();
-  console.log(event);
+  //console.log(event);
 }
 
 function paintGreetings (username) {

@@ -7,7 +7,7 @@ const TODOS_KEY = 'todos';
 let toDos = [];
 
 
-console.log(toDoInput);
+//console.log(toDoInput);
 
 function saveTodo() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));

@@ -106,11 +106,12 @@ button {
 #todo-list li {
   display: flex;
   justify-content: space-between;
-  padding:3px 0;
+  align-items:center;
+  padding:2px 0;
 }
 #todo-list li button{
   margin-left:30px;
-  padding:0 10px;
+  padding:2px;
   background: #f5f5f5;
 }
 #todo-list li button:hover {
@@ -124,7 +125,7 @@ button {
 }
 #quote {
   position: absolute;
-  bottom:10px;
+  top:100px;
   left:50%;
   color:#fff;
   transform: translateX(-50%);
@@ -132,9 +133,12 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 20px;
+  font-weight: normal;
 }
 #quote span {
-  margin-bottom:10px;
+  margin-top:10px;
+  font-size: 16px;
 }
 
 
